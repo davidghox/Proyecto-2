@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>U.E La Monta</title>
+		<link href="img/escuelita.jpg" rel="shortcut icon" type="image/x-icon">
+		<style>
+		
+			body
+			{
+				background: url(img/ninos.jpg) no-repeat fixed center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			#contenedor
+			{
+				background-color: #ffffff;
+				width: 70%;
+				-webkit-box-shadow: 0px 0px 5px 3px rgba(70,130,180,1);
+				border-radius: 1px;
+				margin: 5px 15%;
+				padding-bottom: 45px;
+
+			}
+			header 
+			{
+				text-align:center;
+				color: white;
+				font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+				font-size: 24px;
+				font-weight: 500;
+			}
+			#menu 
+			{
+				
+				width:55%;
+			}
+			
+			ul, ol 
+			{
+				list-style:none;
+			}
+			
+			.nav > li 
+			{
+				float:left;
+			}
+			.nav li a 
+			{
+				background-image: url(img/verde_manzana.jpg);
+				color:black;
+				padding:10px 20px;
+				display:block;
+				font-family:arial;
+				text-decoration:none;
+				border-radius:5px;
+				
+				font-size:16px;
+				font-weight:bold;
+				border: 2px ridge white;
+			}
+			
+			.nav li a:hover 
+			{
+				color:white;
+				font-size:120%;
+			}
+			
+			.nav li ul 
+			{
+				display:none;
+				position:absolute;
+				min-width:100px;
+			}
+			
+			.nav li:hover > ul 
+			{
+				display:block;
+			}
+			
+			.nav li ul li 
+			{
+				position:relative;
+			}
+				.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			#parrafos
+			{
+				width:72%;
+				padding-left:4%;
+				padding-top:1%
+			}
+			#parrafos p
+			{
+				text-align:justify;
+				font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+				text-indent:40px;
+				font-size:18px;
+			}
+			#parrafos h3
+			{
+				text-align:center;
+				color:blue;
+				font-weight:bold;
+				font-size:20px;
+				font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+			}
+			#lateral
+			{
+				float:right;
+				margin-right:0.1cm;
+				margin-top:10%;
+			}
+			#lateral h3
+			{
+				text-align:center;
+				color:blue;
+				font-weight:bold;
+				font-size:20px;
+				font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+			}
+			.lista 
+			{
+				list-style-type: square;
+				padding: 20px;
+			}
+		.lista a
+			{
+			text-align:justify;
+			text-decoration:none;
+			font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+			color:black;
+			}
+		a:hover 
+		{ 
+			color:blue;
+		}
+			#pie
+		{
+			width: 90%;
+			float: left;
+			margin-left: 1cm;
+		}
+		#pie p
+		{
+			font-family: Arial,Helvetica,sans-serif;
+			font-size:13px;
+			text-align:center;
+		}
+		.left
+		{
+			float: left;
+		}
+		.right
+		{
+			float:right;
+		}
+		#searchbox
+		{
+			background-color: #eaf8fc;
+			background-image: linear-gradient(#fff, #d4e8ec);
+			border-radius: 35px;    
+			border-width: 1px;
+			border-style: solid;
+			border-color: #c4d9df #a4c3ca #83afb7;            
+			width: 325px;
+			height: 25px;
+			padding: 10px;
+			margin: 100px auto 50px;
+			overflow: hidden; /* Clear floats */
+		}
+		#search, 
+		#submit 
+		{
+			float: left;
+		}
+
+		#search 
+		{
+			padding: 0px 9px;
+			height: 23px;
+			width: 200px;
+			border: 1px solid #a4c3ca;
+			font: normal 13px 'trebuchet MS', arial, helvetica;
+			background: #f1f1f1;
+			border-radius: 50px 3px 3px 50px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+		}
+		#submit
+		{       
+			background-color: #6cbb6b;
+			background-image: linear-gradient(#000000, #ffffff);
+			border-radius: 3px 50px 50px 3px;    
+			border-width: 1px;
+			border-style: solid;
+			border-color: #7eba7c #578e57 #447d43;
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+						0 1px 0 rgba(255, 255, 255, 0.3) inset;
+			height: 24px;
+			margin: 0 0 0 10px;
+			padding: 0;
+			width: 90px;
+			cursor: pointer;
+			font: bold 14px Arial, Helvetica;
+			color: #000000;    
+			text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+		}
+		#submit:hover 
+		{       
+			background-color: #95d788;
+			background-image: linear-gradient(#ffffff, #000000);
+		}   
+		#submit:active 
+		{       
+			
+			outline: none;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+		}
+		
+		</style>
+	</head>
+
+<body>
+	<header> <!-- cabecera titulo -->
+	<div style="width:100.3%;background-color:#00CED1;position:fixed;margin-top:-1%;margin-left:-1%;margin-right:-1%;">
+		<h1>U.E Bolivariana "La Monta"</h1>
+	</div>
+	</br></br></br></br></br>
+	</header>
+		<center>
+	<nav>
+	<div id="menu">
+			<ul class="nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Escuela</a>
+					<ul>
+						<li><a href="">Misión</a></li>
+						<li><a href="">Visión</a>
+
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Estudiantes</a>
+				<ul>
+						<li><a href="">Mañana</a></li>
+						<li><a href="">Tarde</a>
+
+						</li>
+					</ul>
+					<ul>
+						
+					</ul>
+</li>
+				<li><a href="">Docentes</a>
+					<ul>
+						<li><a href="">Aula</a></li>
+						<li><a href="">Especialistas</a></li>
+		</ul>
+					<li><a href="">Contactenos</a>
+					<ul>
+					<li><a href="">Teléfono</a></li>
+						<li><a href="">Correo</a>
+
+						</li>
+						</ul>
+					
+		</li></li>
+				<li><a href="">Ayuda</a></li>
+		</ul></div>
+	</nav> <!-- navegacion -->
+	</center>
+	</br></br></br>
+	
+	<section>	<!-- contenido -->
+		<div id="contenedor">
+		<center>
+		<img style="width:99%;height:160px;padding-top:0.5%;" src="img/escuela.png"/>
+		</center>
+		<article> <!-- definicion de espacios del contendido -->
+			<aside> <!-- barra lateral -->
+		<div id="lateral">
+		<h3>Enlaces de interés</h3>
+		<ul class="lista">
+					<li class="lista"><a href="">Wikipedia</a></li>
+					<li class="lista"><a href="">Bing</a></li>
+					<li class="lista"><a href="">Ask</a></li>
+					<li class="lista"><a href="">Google</a></li>
+				</ul>
+		</div>
+		</aside>
+			<div id="parrafos">
+			<h3>Señores representantes</h3>
+			<img style="height:100px; float:right;" src=""/>
+			<p> Reciban un cordial saludo en nombre del personal directivo, docente y administrativo de la Unidad Educativa Escuela Bolivariana La Monta. En estos momentos Venezuela está atravesando una coyuntura en todos los aspectos y nuestra institución no escapa a a la misma. La administración del colegio, basado en el  decreto emanado del Ejecutivo Nacional: Gaceta Oficial  N° 6532, de fecha 27 de abril del  2020 sobre aumento salarial e incremento del cesta ticket aplicable a partir del 1ero de Mayo del 2020, se ve en la obligación de realizar un ajuste en la mensualidad a partir de la misma fecha que garantice la calidad y continuidad del personal adscrito a nuestra institución en todos los niveles.</p>
+			</div>
+		</article>
+		<hr style="width:60%;height:1px;background-color:black;float:left;margin-left:2cm;">
+		<article>
+			<div id="parrafos">
+			<h3>Actividades académicas</h3>
+			<img style="height:100px; float:right;" src=""/>
+			<p>EDUCACIÓN PRIMARIA:
+			<li>Lunes 30-09-2020</li>
+
+<li>Turno Mañana: 07:30 am (hasta nuevo aviso) - 11:45 am</li>
+
+<li>Turno Tarde: 01:00 pm - 05:30 pm</li>
+
+			
+			.</p>
+			</div>
+		</article>
+		<hr style="width:60%;height:1px;background-color:black;float:left;margin-left:2cm;">
+		<article>
+			<div id="parrafos">
+			<h3>I lapso 2020- 2021</h3>
+			<p>Se Informa a los Padres y Representantes de 1ero a 6to grado de Educación Básica que los dias Lunes 18 y Martes 19  se entregaran las notas correspondientes al  primer corte del  lapso I..</p>
+			<img style="height:100px; float:right;" src=""/>
+			
+			</div>
+		</article>
+		<hr style="width:60%;height:1px;background-color:black;float:left;margin-left:2cm;">
+		<article>
+			<div id="parrafos">
+			<h3>REUNION PARA PADRES Y REPRESENTANTES DE ALUMNOS DE 4to GRADO</h3>
+			<img style="height:100px; float:right;" src=""/>
+			<p>Se les informa a los Padres y  Representantes de los estudiantes de  4to grado (todas las secciones) de Educación Básica, que para el día 14-11-20 se realizará una reunión para tratar asuntos relacionados con su representado. Hora: 4:00 pm. (Asistencia Obligatoria). <br><br>La Dirección..</p> 
+			
+			</div>
+		</article>
+		</br>
+		<hr style="width:75%;height:1px;background-color:black;">
+		<footer> <!-- pie de pagina -->
+		<div id="pie">
+				<p class="left">Unidad Educativa Bolivariana “La Monta”</p> 
+				<p class="right">Diseño:David Ramirez</p> 
+    </div>
+	</footer>
+	
+	</section>
+	</div>
+	
+	
+	<form id="searchbox" action="">
+    <input id="search" type="text" placeholder="Buscar...!">
+    <input id="submit" type="submit" value="Search">
+</form>
+	
+</body>
+
+</html>
